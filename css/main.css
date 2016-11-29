@@ -94,21 +94,21 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+	background-color: red;
+	padding: 50px;
+}
 
+#question, answer {
+	display: flex;
+	justify-content: space-around;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#question section, answer section {
+	width: 30%;
+	background-color: blue;
+	border: 1px solid white;
+}
 
 
 /* ==========================================================================
