@@ -95,19 +95,68 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-	background-color: red;
-	padding: 50px;
+	margin: 0;	
+	padding: 0;
+	font-family: 'Dancing Script', cursive;
+	font-size: 40pt;
 }
 
-#question, answer {
+#snowflakes{
+	background: none;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
+
+#snowbg {
+	background:url('http://wallpapercave.com/wp/kOdJfq7.jpg');
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	height: 100%;
+	background-size: calc(100% + 50px);
+	-webkit-filter: blur(1px);
+}
+
+#quote {
+	position: absolute;
+	z-index: 2;
 	display: flex;
-	justify-content: space-around;
-}
-
-#question section, answer section {
-	width: 30%;
-	background-color: blue;
-	border: 1px solid white;
+	justify-content: flex-end;
+	top: 10px;
+	text-align: right;
+	right: 10px;
+	color: white;
+	text-shadow: 2px 2px 2px grey;
 }
 
 
